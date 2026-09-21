@@ -1,7 +1,7 @@
 # Web Resume
 A (currently not filled out) web version of the Lewis University resume format that includes a PDF version.
 
-## URL (How To Access)
+## URL (How to Access)
 [Website Link](https://purple-forest-0d360d910.6.azurestaticapps.net)
 
 ### Credits
