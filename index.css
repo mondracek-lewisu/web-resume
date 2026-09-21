@@ -46,6 +46,7 @@ body {
 }
 
 .subheading {
+    font-size: 1.17em;
     border-bottom: 1px solid #000000;
     margin-bottom: 0px;
 }
