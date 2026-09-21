@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #3e3e42;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 75px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.name h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.pdf {
+    text-align: center;
+}
+
+.highlights, .summary, .education, .projects, .internship, .research, .experience, .awards, .leadership, .language {
+   width: 80%;
+   margin: auto;
+}
+
+.tertiary-heading {
+    margin-bottom: 0px;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.subheading {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 0px;
+}
+
+.list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 60px;
+}
+
+.education-columns, .internship-columns, .experience-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+}
+
+.education-columns p, .internship-columns p, .experience-columns p {
+    margin: 0;
+}
+ .projects p, .research p {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.list + .experience-columns {
+    margin-top: 15px;
+}
+
+.sub-list {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.page-two-header {
+    display: none;
+}
+
+/* Chat-GPT formatted the print to PDF */
+@media print {
+
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    .pdf {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+        overflow: visible;
+    }
+
+    .name h1 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .highlights,
+    .summary,
+    .education,
+    .projects,
+    .internship,
+    .research,
+    .experience,
+    .awards,
+    .leadership,
+    .language {
+        width: 100%;
+    }
+
+    .list {
+        padding-left: 40px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .education-columns,
+    .internship-columns,
+    .experience-columns {
+        padding-left: 20px;
+    }
+
+    .projects p,
+    .research p {
+        padding-left: 20px;
+    }
+
+    .list + .experience-columns {
+        margin-top: 10px;
+    }
+
+    .sub-list {
+        margin-left: 10px;
+    }
+
+    .subheading {
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .tertiary-heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .page-two-header {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
